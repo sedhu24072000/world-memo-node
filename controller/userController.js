@@ -31,6 +31,8 @@ exports.login = async(req,res) =>{
             res.cookie('jwt', token, {                                                                                                        
                 httpOnly: true,
                 maxAge: 900000,
+                sameSite: 'None',
+                domain: 'world-memo.netlify.app'
               });
         
             res.status(200).json({ 
