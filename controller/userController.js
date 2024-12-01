@@ -32,8 +32,7 @@ exports.login = async(req,res) =>{
                 httpOnly: true,
                 maxAge: 900000,
                 sameSite: 'None',
-                secure: true,
-                domain: 'world-memo.netlify.app'
+                secure: true
               });
         
             res.status(200).json({ 
