@@ -16,7 +16,6 @@ app.use(cors({
   }));
   
 app.use('/uploads', express.static('uploads'));
-
 app.use('/user', userRouter)
 app.use('/image',imageRouter)
 
