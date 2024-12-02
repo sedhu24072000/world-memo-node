@@ -229,6 +229,7 @@ exports.protect = async (req,res,next) =>{
     req.user = currentUser
     next()
     }catch(err){
+        console.log(err)
         res.status(400).json({
             status : 'failed',
             message : 'something went wrong!'
